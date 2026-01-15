@@ -77,4 +77,3 @@ Proyecto desarrollado en el proceso de aprendizaje de JavaScript y Node.js
 
 ---
 
-✨ Si quieres versión SIN emojis, versión con instrucciones de instalación o con imágenes, me dices y te la dejo lista 💪
