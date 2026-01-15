@@ -17,7 +17,9 @@ Aplicación de línea de comandos construida con Node.js que permite registrar y
 
 ├── veterinaria/        
 │   ├── index.js        # (Punto de entrada CLI)
+
 │   ├── operaciones.js  # (Lógica para registrar y leer citas)
+
 │   └── citas.json      # (Base de datos local)
 
 ---
