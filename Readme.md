@@ -1,84 +1,66 @@
 🐾 Veterinaria – Gestión de Citas en Node.js
 
-Aplicación de línea de comandos desarrollada en Node.js que permite registrar y consultar citas veterinarias, aplicando lectura/escritura de archivos y uso de módulos.
+Aplicación de línea de comandos construida con Node.js que permite registrar y listar citas veterinarias utilizando persistencia de datos en archivos JSON.
 
-🚀 Tecnologías y conceptos aplicados
+🚀 Tecnologías y Conceptos Utilizados
 
-Ejecución de scripts con Node.js
+⚙️ Node.js ejecutado desde terminal
 
-Manejo de archivos mediante File System (fs)
+📁 File System (fs) para lectura/escritura de archivos
 
-Lectura y escritura en JSON
+🧩 Módulos CommonJS (require / module.exports)
 
-Modularización con require y module.exports
+💾 Persistencia local en JSON
 
-Uso de argumentos por consola con process.argv
+📝 Procesamiento de argumentos CLI con process.argv
 
-📁 Estructura del proyecto
+📂 Estructura del Proyecto
 veterinaria/
-├─ index.js          // Punto de entrada
-├─ operaciones.js    // Lógica de registro y lectura
-└─ citas.json        // Base de datos local
+├─ index.js          # Punto de entrada CLI
+├─ operaciones.js    # Lógica para registrar y leer citas
+└─ citas.json        # Base de datos local
 
-📌 Funcionamiento
-📍 Registrar una cita
-```bash
+🧪 Comandos Disponibles
+📌 Registrar una cita
 node index.js registrar 3leches "1 año" gato blanco "tumor en el intestino"
-```
 
-
-Argumentos en orden:
-
-Operación (registrar)
-
-Nombre
-
-Edad
-
-Tipo de animal
-
-Color
-
-Enfermedad
-
-📍 Leer todas las citas
-```bash
+📌 Leer todas las citas registradas
 node index.js leer
-```
 
+🐶 Argumentos del Comando registrar
+Argumento	Ejemplo	Descripción
+1	registrar	Operación deseada
+2	Benito	Nombre del animal
+3	"2 años"	Edad del paciente
+4	perro	Tipo de animal
+5	blanco	Color
+6	vomitos	Motivo / enfermedad
+🗂️ Descripción de Archivos
+Archivo	Rol
+index.js	Captura argumentos y ejecuta funciones
+operaciones.js	Contiene registrar() y leer() para manipular datos
+citas.json	Almacena las citas de forma persistente
+🔒 Validaciones Incluidas
 
-Devuelve en consola el contenido almacenado en citas.json.
+❌ Bloquea registros incompletos
 
-🔒 Validaciones
+⚠️ Informa cuando la operación ingresada no existe
 
-Evita registrar citas con datos incompletos
+📤 Manejo básico de retroalimentación al usuario
 
-Informa cuando se ingresa una operación no reconocida
+✔️ Requerimientos del Desafío Cumplidos
 
-📝 Archivos clave
-operaciones.js
+ Ejecutar comandos con Node.js
 
-registrar(): Agrega una nueva cita al JSON
+ Utilizar process.argv
 
-leer(): Imprime todas las citas guardadas
+ Leer y escribir archivos JSON con fs
 
-citas.json
+ Exportar e importar módulos
 
-Archivo persistente donde se almacenan las citas (inicia como [])
+ Persistencia de datos sin base de datos
 
-✔️ Requisitos cubiertos
-
- Uso de Node.js en terminal
-
- Módulo FS para lectura y escritura
-
- Argumentos CLI (process.argv)
-
- Importación y exportación de módulos
-
- Persistencia en JSON
-
- 👩‍💻 Autor
+👩‍💻 Autor
 
 Javiera Saavedra
-Proyecto de aprendizaje inicial en JavaScript y Node.js.
+Proyecto de aprendizaje inicial en JavaScript y Node.js 💛
