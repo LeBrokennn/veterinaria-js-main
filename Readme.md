@@ -1,9 +1,3 @@
-¡Lo tengo Javiera!
-El problema es que estás **pegándolo sin saltos**, así que aquí te lo dejo **ULTRA PLANO**, con **saltos forzados línea a línea**, sin tablas, sin listas con Markdown especial, para que NO se rompa cuando pegues 👇
-(Copa, pega y te quedará tal cual)
-
----
-
 🐾 Veterinaria – Gestión de Citas en Node.js
 Aplicación de línea de comandos construida con Node.js que permite registrar y listar citas veterinarias utilizando persistencia de datos en archivos JSON.
 
@@ -21,10 +15,10 @@ Aplicación de línea de comandos construida con Node.js que permite registrar y
 
 ## 📂 Estructura del Proyecto
 
-veterinaria/
-├─ index.js (Punto de entrada CLI)
-├─ operaciones.js (Lógica para registrar y leer citas)
-└─ citas.json (Base de datos local)
+├── veterinaria/        
+│   ├── index.js        # (Punto de entrada CLI)
+│   ├── operaciones.js  # (Lógica para registrar y leer citas)
+│   └── citas.json      # (Base de datos local)
 
 ---
 
